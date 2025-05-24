@@ -1,22 +1,25 @@
-Sistem Manajemen Tugas
-API sederhana untuk mengelola pengguna dan tugas dengan kontrol akses berbasis peran.
+# Task Management System
 
-Cara Memulai
-Ambil kode: git clone <repo-url>
-Pasang dependensi: composer install
-Salin .env.example jadi .env dan atur pengaturan database.
-Jalankan migrasi: php artisan migrate
-Nyalakan server: php artisan serve
-Buka frontend di http://localhost:8000/frontend/index.html
-Pakai Docker
-Pasang Docker dan Docker Compose.
-Jalankan: docker-compose up -d
-Akses di http://localhost:8000
-Uji Coba
-Jalankan: php artisan test --coverage
+A RESTful API for user and task management with role-based access control.
 
-Jadwal Otomatis
-Jalankan: php artisan schedule:run atau tambahkan ke cron: * * * * * php /path/to/artisan schedule:run
+## Setup
+1. Clone the repository: `git clone <repo-url>`
+2. Install dependencies: `composer install`
+3. Copy `.env.example` to `.env` and configure database settings.
+4. Run migrations: `php artisan migrate`
+5. Start the server: `php artisan serve`
+6. Access the frontend at `http://localhost:8000/frontend/index.html`
 
-Dokumentasi API
-Cek Swagger di: http://localhost:8000/api/documentation
+## Docker
+1. Install Docker and Docker Compose.
+2. Run: `docker-compose up -d`
+3. Access at `http://localhost:8000`
+
+## Testing
+Run: `php artisan test --coverage`
+
+## Scheduler
+Run: `php artisan schedule:run` or add to cron: `* * * * * php /path/to/artisan schedule:run`
+
+## API Documentation
+Access Swagger at: `http://localhost:8000/api/documentation`
